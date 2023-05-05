@@ -1,0 +1,135 @@
+:root{
+    --roxo-fundo : #4936f2;
+    --roxo-redondo : #432ee1;
+    --branco : #fff7f6;
+    --cinza : #c2bfff;
+
+    --rosa: #cf8489;
+    --amarelo: #e4b54d;
+    --verde : #6bd4b6;
+    --azul: #273799;
+    --preto: #2f3952;
+
+    --botao: #382fea;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+
+    width: 60%;
+    margin: 10% auto;
+
+    font-family: "Hanken Grotesk", sans-serif, Helvetica;
+}
+
+.result{
+    background-color: var(--roxo-fundo);
+    align-items: center;
+    text-align: center;
+    border-radius: 15px;
+
+    width: 270px;
+}
+.title{
+    padding: 25px;
+    font-size: 20px;
+    color: var(--cinza);
+}
+.porcentage{
+    width: 40%;
+    margin: auto;
+    padding: 25px;
+    background-color: var(--roxo-redondo);
+    border-radius: 50%;
+}
+.p-text{
+    font-size: 50px;
+    font-weight: 600;
+    color: var(--branco);
+}
+.p-min{
+    font-size: 14px;
+    color: var(--cinza);
+}
+.status{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    
+    width: 70%;
+    margin: 25px auto;
+}
+.s-title{
+    color: var(--branco);
+    font-size: 28px;
+}
+.s-text{
+    color: var(--cinza);
+    font-size: 15px;
+}
+
+.sumary{
+    width: 290px;
+}
+.full-content{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.bold-purple{
+    color: var(--preto);
+    font-weight: 600;
+}
+.content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--branco);
+    padding: 2px;
+}
+.content-name{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.reaction{
+    color: var(--rosa);
+}
+.memory{
+    color: var(--amarelo);
+}
+.verbal{
+    color: var(--verde);
+}
+.visual{
+    color: var(--azul);
+}
+.content-status{
+    display: flex;
+    gap: 5px;
+}
+.porc{
+    color: var(--cinza);
+}
+button{
+    width: 75%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    background-color: var(--botao);
+    color: var(--branco);
+}
+button:hover{
+    background-color: var(--preto);
+}
+
+@media (max-width: 749px){
+    body{
+        flex-direction: column;
+    }
+    .sumary{
+        width: 280px;
+    }
+}
